@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        // Get the part of the URL after the slash
+        const path = window.location.pathname.substring(1);
+
+        // --- ADD YOUR LINKS HERE ---
+        
+        // Example: If someone visits yoursite.com/rоЬlох
+        if (path === "rоЬlох") { // Note: Use the specific homoglyphs you want
+            window.location.href = "https://www.roblox.com";
+        }
+        
+        // Example: If someone visits yoursite.com/тwitt3r
+        else if (path === "тwitt3r") {
+            window.location.href = "https://twitter.com";
+        }
+
+        // Default message if no match
+        document.write("<h1>Link not found</h1><p>Try a different code.</p>");
+    </script>
+</head>
+<body>
+    <p>If you are not redirected, <a href="#">click here</a>.</p>
+</body>
+</html>
